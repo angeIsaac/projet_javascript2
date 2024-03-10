@@ -23,8 +23,19 @@ function charUpperCase(char){
   let tab = char.split(" ");
   let charMarj = "";
   for(let value of tab){
-    charMarj += value[0].toUppercase() + value.slice(1, (value.length)) + " "; 
+    charMarj += value[0].toUppercase() + value.slice(1) + " "; 
   }
   return charMarj;
 }
 console.log(charUpperCase("bonjour je suis isaac etudiant a Gomycode"));
+
+// fonction qui permet de filtrer un tableau en fonction d'une condition
+function filter(tab){
+  for(let i in tab){
+    if(tab[i] % 2 !==0){
+      delete tab[i];
+    }
+  }
+  return tab;
+}
+console.log(filter([12, 8, 9, 67, 45, 4, 2, 16]));
