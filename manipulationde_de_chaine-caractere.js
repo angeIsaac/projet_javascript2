@@ -39,3 +39,4 @@ function filter(tab){
   return tab;
 }
 console.log(filter([12, 8, 9, 67, 45, 4, 2, 16]));
+// 
